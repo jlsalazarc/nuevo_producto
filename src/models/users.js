@@ -29,7 +29,7 @@ const userSchema = new Schema({
   products: {
     type: [{
       type: Schema.Types.ObjectId,
-      ref: 'Grocery'
+      ref: 'Proyecto'
     }],
   }
 }, {
