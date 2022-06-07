@@ -15,7 +15,7 @@ exports.create = async (req, res) => {
     res.status(201).json({ message: 'Producto creado', proyecto });
   } catch(e) {
     res.status(400).json({ message: e.message });
-  }
+  } 
 };
 
 exports.list = async (req, res) => {
