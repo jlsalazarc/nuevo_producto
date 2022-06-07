@@ -22,9 +22,9 @@ exports.list = async (req, res) => {
   try {
     const { userId } = req;
 
-    const groceries = await Proyecto.find({ salesman: userId });
+    const proyectos = await Proyecto.find({ salesman: userId });
     console.log(userId);
-    res.status(200).json({ message: `${groceries.length} productos encontrados`, groceries })
+    res.status(200).json({ message: `${proyectos.length} productos encontrados`, proyectos })
   } catch(e) {
     res.status(500).json({ message: 'Algo salió mal' })
   }

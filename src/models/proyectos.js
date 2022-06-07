@@ -1,6 +1,6 @@
 const { Schema, model, models } = require('mongoose');
 
-const groceriesSchema = new Schema({
+const proyectoSchema = new Schema({
   nombre: {
     type: String,
     required: [true, 'El campo nombre es requerido.'],
@@ -33,6 +33,6 @@ const groceriesSchema = new Schema({
   timestamps: true,
 });
 
-const Proyecto = model('Proyecto', groceriesSchema);
+const Proyecto = model('Proyecto', proyectoSchema);
 
 module.exports = Proyecto;
