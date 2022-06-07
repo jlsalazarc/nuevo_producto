@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 function connect() {
-  mongoose.connect('mongodb://localhost:27017/database');
+  mongoose.connect(process.env.BASE_URL);
 
   mongoose.connection.once('open', () => {
     console.log('Database successfully connected');
